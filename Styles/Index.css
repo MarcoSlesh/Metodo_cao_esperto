@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: initial;
+}
+/* estilo da logo */
+.Metodo{
+    display: flex;
+    justify-content: center;
+    margin-top: 45vh;
+}
+
+.border{
+    padding: 6px 55px;
+    border-radius: 50px;
+    background: #F24812;
+    font-family: 'Inter', sans-serif;
+}
+
+h1{
+    font-size: 100px;
+    color: white;
+}
+
+.dog{
+    position: absolute;
+    top: 36vh;
+    right: 53vh;
+}
+
+/* Background */
+body{
+    background-image: url(../assets/background/dog.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
