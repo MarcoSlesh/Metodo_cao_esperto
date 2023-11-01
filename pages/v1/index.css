@@ -84,6 +84,16 @@
     font-size: 4.8vh;
 }
 
+/* Adiciona linha ahorizontal apos o H2 */
+.header_container h2::after{ 
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    background-color: #F24812;
+}
+
 .header_container p{
     margin-top: 7.7vh;
     font-size: 2vh;
