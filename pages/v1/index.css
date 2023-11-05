@@ -99,12 +99,50 @@
     font-size: 3.8vh;
     font-weight: 600;
 }
-/* end header */
-
 /* start Logo */
+#main_header .logo{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'logo''marca';
+    width: minmax(200px, 300px);
+    margin-top: 64px;
+    height: auto;
+}
+
+#main_header .logo .logo_container{
+    grid-area: logo;
+    display: flex;
+    height: 40px;
+}
+#main_header .logo .logo_container h1{
+    padding: 0 24px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 8px;
+    border-radius: 50px 0 0 50px;
+    background-color: #F24812;
+}
+#main_header .logo .logo_container .logo_icon{
+    position: relative;
+    top: -20px;
+    right: 30px;  
+    width: 80px;
+    height: 80px;
+}
+#main_header .logo .logo_container .logo_icon img{
+    height: 100%;
+    width: auto;
+}
+#main_header .logo h2{
+    grid-area: marca;
+    
+}
 
 
 /* end Logo */
+
+/* end header */
+
 
 /* section destinada a argumentar a necessidade de uma adestração */
 .first{
