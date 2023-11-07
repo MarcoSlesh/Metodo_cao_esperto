@@ -10,7 +10,9 @@
     list-style: none;
 }
 
-
+body{
+    width: 100%;
+}
 
 /* start header */
 
@@ -20,6 +22,7 @@
     background-image: url(../../assets/background/dog.png);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
 }
 
 #main_header, .header_container{
@@ -27,7 +30,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 55%;
+}
+#main_header .header_container{
+    width: 50%;
 }
 
 #main_header .header_container h2, #main_header .header_container p{
@@ -102,32 +107,35 @@
 /* start Logo */
 #main_header .logo{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    row-gap: 0;
+    grid-template-rows: 40px;
     grid-template-areas: 'logo''marca';
-    width: minmax(200px, 300px);
-    margin-top: 64px;
+    width: 210px;
+    margin: 64px 0;
     height: auto;
 }
 
 #main_header .logo .logo_container{
     grid-area: logo;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 40px;
+    width: 220px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #F24812;
 }
 #main_header .logo .logo_container h1{
-    padding: 0 24px;
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 8px;
-    border-radius: 50px 0 0 50px;
-    background-color: #F24812;
 }
 #main_header .logo .logo_container .logo_icon{
     position: relative;
-    top: -20px;
-    right: 30px;  
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
+    right: 20px;
 }
 #main_header .logo .logo_container .logo_icon img{
     height: 100%;
@@ -135,7 +143,9 @@
 }
 #main_header .logo h2{
     grid-area: marca;
-    
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
 }
 
 
