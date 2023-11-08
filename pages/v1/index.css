@@ -10,63 +10,29 @@
     list-style: none;
 }
 
-#main_header, .logo, .logo_container, .header_container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body{
+    width: 100%;
 }
-
-/* start Logo */
-.logo, .header_container{
-    width: 55%;
-}
-
-.logo_container{
-    overflow: hidden;
-    height: 100px;
-    width: 300px;
-    margin-top: 4.8vh;
-    padding-right: 10px;
-}
-
-.logo_container h2{
-    position: relative;
-    top: -89px;
-}
-
-.border{
-    font-size: 2.2vh;
-    font-weight: 300;
-    letter-spacing: 0.7vh;
-    border-radius: 5.5vh;
-    background: #F24812;
-    padding: 0.2vh 1.7vh;
-    margin-top: 6.6vh;
-    text-transform: uppercase;
-}
-
-.icon{
-    position: relative;
-    height: 8.5vh;
-    width: 8.5vh;
-    top: -60px;
-    right: -90px;
-}
-
-.icon img{
-    height: 100%;
-    width: auto;
-}
-/* end Logo */
 
 /* start header */
+
 #main_header{
     padding-bottom: 150px;
     color: white;
     background-image: url(../../assets/background/dog.png);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+}
+
+#main_header, .header_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#main_header .header_container{
+    width: 50%;
 }
 
 #main_header .header_container h2, #main_header .header_container p{
@@ -138,7 +104,55 @@
     font-size: 3.8vh;
     font-weight: 600;
 }
+/* start Logo */
+#main_header .logo{
+    display: grid;
+    row-gap: 0;
+    grid-template-rows: 40px;
+    grid-template-areas: 'logo''marca';
+    width: 210px;
+    margin: 64px 0;
+    height: auto;
+}
+
+#main_header .logo .logo_container{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 220px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #F24812;
+}
+#main_header .logo .logo_container h1{
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 8px;
+}
+#main_header .logo .logo_container .logo_icon{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    right: 20px;
+}
+#main_header .logo .logo_container .logo_icon img{
+    height: 100%;
+    width: auto;
+}
+#main_header .logo h2{
+    grid-area: marca;
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+/* end Logo */
+
 /* end header */
+
 
 /* section destinada a argumentar a necessidade de uma adestração */
 .first{
