@@ -157,11 +157,36 @@ body{
 /* section destinada a argumentar a necessidade de uma adestração */
 .first{
     width: 100%;
+    background-color: #F2F2F2;
 }
 
 .first .content{
     padding: 8.8vh 13.3vh;
-    background-color: #F2F2F2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "esquerda direita";
+    column-gap: 32px;
+    background-color: white;
+}
+.first .content .content_image{
+    grid-area: esquerda;
+}
+
+.first .content .content_info{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: direita;
+}
+.first .content .content_info h2{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.first .content .content_info p:nth-child(2){
+    font-weight: 700;
+}
+
+.first .content .CTA{
+    grid-area: direita;
 }
