@@ -156,12 +156,69 @@ body{
 
 /* section destinada a argumentar a necessidade de uma adestração */
 .first{
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
     width: 100%;
+    background-color: #F2F2F2;
 }
 
 .first .content{
-    padding: 8.8vh 13.3vh;
-    background-color: #F2F2F2;
+    height: 660px;
+    max-width: 1200px;
+    padding: 8.8vh  13.3vh 32px 13.3vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "esquerda direita";
+    column-gap: 32px;
+    background-color: white;
+}
+.first .content .content_image{
     display: flex;
+    justify-content: center;
     align-items: center;
+    grid-area: esquerda;
+    height: 100%;
+    width: 100%;
+}
+
+.first .content .content_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: direita;
+    height: 100%;
+    width: 100%;
+}
+.first .content .content_info h2{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.first .content .content_info p:nth-child(2){
+    font-weight: 700;
+}
+
+.first .content .CTA{
+    grid-area: direita;
+}
+
+.first .content .CTA button{
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 11px 54px 10px 54px;
+    background: #F24812;
+    color: white;
+}
+
+.first .content .CTA .White{
+    background-color: white;
+    font-weight: 600;
+    padding: 10px 17px 9px 18px;
+    margin-right: 20px;
+    border: 2px solid #282828;
+    color: #282828;
 }
