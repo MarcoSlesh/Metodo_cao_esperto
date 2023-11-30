@@ -154,7 +154,7 @@ body{
 /* end header */
 
 
-/* section destinada a argumentar a necessidade de uma adestração */
+/* primeira section destinada a argumentar a necessidade de uma adestração */
 .first{
     padding: 80px;
     display: flex;
@@ -222,3 +222,96 @@ body{
     border: 2px solid #282828;
     color: #282828;
 }
+
+/* end first section */
+
+/* segunda section destinada a informação do produto */
+
+.second{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px;
+    height: auto;
+    width: 100%;
+}
+
+.second .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.second .content .content_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.second .content .content_info h2{
+    font-weight: 500;
+    font-size: 48px;
+    width: 595px;
+    text-align: center;
+    padding-bottom: 29px;
+}
+
+.second .content .content_info p{
+    font-weight: 300;
+    text-align: center;
+    font-size: 16px;
+    width: 595px;
+    padding-bottom: 39px;
+}
+
+.second .content .tools{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.second .content .tools .tool{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second .content .tools .tool .tool_image{
+    width: 90px;
+    height: 90px;
+    border-radius: 1000px;
+    border-bottom: 2px solid #F24812;
+    background: #C8C8C8;
+    margin-right: 25px;
+}
+
+.second .content .tools .tool .tool_info p{
+    width: 211px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.second .content .CTA{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    background: #282828;
+    height: 40px;
+    padding: 8px 43px 8px 47px;
+}
+
+.second .content .CTA button{
+    background: #282828;
+    color: #FFF;
+    border-radius: 50px;
+}
+
+.second .content .CTA figure{
+    padding-top: 5px;
+}
+
+/* end second section */
